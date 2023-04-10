@@ -62,4 +62,4 @@ async def ch_pr():
 client.loop.create_task(ch_pr())
 
 
-client.run('OTY3NDE5NjkzMDIxMzk3MDUz.G1XbVT.o9NmrPwvfzW6K7J0JqWVbl1Nxq1P3OnQBzk7Tw')
+client.run('')

@@ -191,6 +191,10 @@ async def choose(ctx,optns):
     await ctx.send('I choose {0}'.format(random.choice(optns)))
   
 # startup
+
+with open('token.txt') as f:
+  token = f.readline()
+
 async def ch_pr():
   print('Bot is up!')
   await client.wait_until_ready()
@@ -200,4 +204,4 @@ async def ch_pr():
     await client.change_presence(status = discord.Status.dnd ,activity=discord.Activity(type = discord.ActivityType.streaming,name=status))
     await asyncio.sleep(2)
 client.loop.create_task(ch_pr())
-client.run('OTY3NDE5NjkzMDIxMzk3MDUz.GX6tEw.A71t2AO5g75E_Cvdny-Y-GdCkKZ5zOwJHalXn8')
+client.run(token)
