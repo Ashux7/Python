@@ -156,7 +156,7 @@ async def freenitro(ctx):
 @client.command()
 async def help(ctx):
   help_embed = discord.Embed(
-    titlehttps = 'HELP MENU',
+    title = 'HELP MENU',
     colour = 0xf0ff00
   )
   help_embed.set_thumbnail(url = 'https://media.discordapp.net/attachments/982644043420930048/982916949208076288/bruh.png?')
