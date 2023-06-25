@@ -5,10 +5,10 @@ import asyncio
 import os
 import random
 from discord.utils import get
-intents=discord.Intents.default()
-client = discord.Client(intents=discord.Intents.default())
-client = commands.Bot(command_prefix='-',intents=intents)
-client.remove_command("help")
+intents=discord.Intents.all()
+client = discord.Client(intents=discord.Intents.all())
+client = commands.Bot(command_prefix='.',intents=intents)
+client.remove_command('help')
 
 # clears msgs
 @client.command(aliases = ['pu'])
@@ -198,10 +198,10 @@ with open('token.txt') as f:
 async def ch_pr():
   print('Bot is up!')
   await client.wait_until_ready()
-  statuses = ['with 69 others','-help']
+  statuses = ['Ashuu#3473' , '-help']
   while not client.is_closed():
     status = random.choice(statuses)
-    await client.change_presence(status = discord.Status.dnd ,activity=discord.Activity(type = discord.ActivityType.streaming,name=status))
+    await client.change_presence(status = discord.Status.dnd ,activity=discord.Activity(type = discord.ActivityType.watching,name=status))
     await asyncio.sleep(2)
 client.loop.create_task(ch_pr())
 client.run(token)
