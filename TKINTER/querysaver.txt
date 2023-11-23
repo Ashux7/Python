@@ -1,0 +1,16 @@
+Problem = Writing SQL query and stuff is tough and many can't take care of the syntax and stuff
+
+Solution = Tkinter program where user can select what he wants to see.
+
+CodeMap = 
+1. get the database names and table name in drop down menus or scrolling stuff like in anyway so user can select the table in which he wants to run the query
+(user selects the db and table)
+2. get the columns available in the table and ask user which one to use(add an All optn too) in form of checkboxes
+(user selects the columns)
+3. get the desc of the columns selected and then provide him conditions on that basis like if one has selected name column then we'll provide him conditions like 'where name like "%X_Z_%";' if he has selected salary then well give conditions like 'where salary ><= "6900"'. make different checkboxesfor these conitions under their specific columns and after the user submits, well show the output and stuff 
+
+
+https://onedrive.live.com/view.aspx?resid=BDC3705D5D250263%21305&id=documents&wd=target%28Quick%20Notes.one%7C05E9A705-6820-49E2-95EA-AB3B9779B200%2FQuerysaver%7C4E11391C-EE9C-418A-8CB9-4D15E63C0E3A%2F%29
+onenote:https://d.docs.live.net/bdc3705d5d250263/Documents/Shyam%20Bihari's%20Notebook/Quick%20Notes.one#Querysaver&section-id={05E9A705-6820-49E2-95EA-AB3B9779B200}&page-id={4E11391C-EE9C-418A-8CB9-4D15E63C0E3A}&end
+
+link for onenote
